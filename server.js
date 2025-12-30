@@ -20,7 +20,7 @@ const io = new Server(server, {
     origin: "*",
     methods: ["GET", "POST"]
   },
-    transports: ["websocket"],  // 🔥 only websocket, no polling
+    transports: ["websocket", "polling"],  // 🔥 only websocket, no polling
   pingTimeout: 60000,           // optional, for stable connections
   pingInterval: 25000
 });
